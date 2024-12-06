@@ -1,0 +1,40 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+h1 {
+  position: relative;
+  font-size: 5vw;
+  color: #1e1f21;
+  -webkit-text-stroke: 0.2vw rgb(21, 113, 252, 0.1);
+}
+
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(21, 113, 252, 1);
+  -webkit-text-stroke: 0vw #1e1f21;
+  border-right: 3px solid rgb(21, 113, 252, 1);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}

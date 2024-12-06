@@ -10,7 +10,7 @@ h1 {
   position: relative;
   font-size: 5vw;
   color: #1e1f21;
-  -webkit-text-stroke: 0.2vw rgb(21, 113, 252, 0.1);
+  -webkit-text-stroke: 0.2vw rgb(21, 113, 252, 0.7);
 }
 
 h1::before {

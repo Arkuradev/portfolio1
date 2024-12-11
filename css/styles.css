@@ -5,7 +5,6 @@
   font-family: "Poppins", sans-serif;
 }
 .card .overlay h3 {
-  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
@@ -22,7 +21,7 @@ body {
 
 .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 30px;
 }
 
@@ -69,7 +68,7 @@ img {
 }
 .overlay h3 {
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-top: 70%;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
@@ -82,7 +81,6 @@ img {
   color: #fff;
   background: #1c1c1c;
   border-radius: 50px;
-  padding: 5px 15px;
 }
 
 .card:hover .overlay {
@@ -91,7 +89,7 @@ img {
 }
 
 .links-container {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -134,4 +132,27 @@ footer {
   padding: 50px 10px;
   background-color: #0a0909;
   text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1350px) {
+  .overlay svg {
+    width: 30px;
+  }
+  .overlay .github-logo {
+    width: 35px;
+  }
+  .live-container p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card .overlay h3 {
+    font-size: 1.2rem;
+  }
+  .overlay {
+    font-size: 12px;
+  }
 }

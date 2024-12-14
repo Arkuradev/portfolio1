@@ -1,3 +1,4 @@
+@import url("/css/variables.css");
 * {
   margin: 0;
   padding: 0;
@@ -7,35 +8,41 @@
 
 /* NAVBAR and FOOTER */
 
-/* FIX THIS CONTAINER BEFORE DELIVERY */
-
-.top-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.welcome-container {
-  width: 1200px;
-  margin: auto;
-}
-.welcome-container h2 {
-  text-align: start;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #fff;
-}
-.welcome-container h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
-}
-
-/* END OF CONTAINER */
-
 body {
-  background: #1e1f21;
-  color: #fff;
+  background: var(--color-black);
+  color: var(--color-white);
 }
+
+main {
+  flex: 1;
+}
+
+.intro-container {
+  display: flex;
+  max-width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 150px;
+  border-radius: 10px;
+  background-color: #1571fc59;
+  box-shadow: 0 4px 12px 0 #1571fcd9, 0 6px 20px 0 #1571fcd9;
+}
+.about-me h1 {
+  margin-bottom: 10px;
+}
+.about-me p {
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES FOR ABOUT ME CONTAINER */
 
 .wrapper {
   padding: 10px 10%;
@@ -127,8 +134,8 @@ img {
 
 .github-container svg:hover,
 .live-container svg:hover {
-  fill: #1571fcd9;
-  color: #1571fcd9;
+  fill: var(--color-primary);
+  color: var(--color-primary);
 }
 .live-container {
   margin-top: 2px;
@@ -138,7 +145,7 @@ img {
 }
 .overlay .github-logo {
   width: 50px;
-  fill: #e8eaed;
+  fill: var(--color-icons);
   height: auto;
 }
 
@@ -156,14 +163,25 @@ img {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
-  padding: 50px 10px;
-  background-color: #0a0909;
+
+  background-color: var(--color-black);
   text-align: center;
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+  .about-me {
+    text-align: center;
+    padding: 20px 50px;
+  }
+  .about-me p {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+}
 
 @media screen and (max-width: 1350px) {
   .overlay svg {

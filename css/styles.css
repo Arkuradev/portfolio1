@@ -6,8 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* NAVBAR and FOOTER */
-
 body,
 main {
   background-color: var(--color-black);
@@ -42,8 +40,6 @@ main {
   line-height: 1.8;
   font-size: 0.9rem;
 }
-
-/* MEDIA QUERIES FOR ABOUT ME CONTAINER */
 
 .wrapper {
   padding: 10px 10%;
@@ -131,14 +127,7 @@ img {
   align-items: center;
   justify-content: space-evenly;
 }
-/*
-.github-container svg:hover,
-.live-container svg:hover {
-  fill: var(--color-primary);
-  color: var(--color-primary);
-}
-*/
-/* TEST */
+
 .github-container a:hover,
 .live-container a:hover {
   color: var(--color-primary);

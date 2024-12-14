@@ -8,7 +8,8 @@
 
 /* NAVBAR and FOOTER */
 
-body {
+body,
+main {
   background-color: var(--color-black);
   color: var(--color-white);
 }

@@ -116,7 +116,6 @@ img {
   text-decoration: none;
   font-size: 14px;
   color: #fff;
-  background: #1c1c1c;
   border-radius: 50px;
 }
 
@@ -138,6 +137,13 @@ img {
   fill: var(--color-primary);
   color: var(--color-primary);
 }
+
+/* TEST */
+.github-container a:hover,
+.live-container a:hover {
+  color: var(--color-primary);
+}
+
 .live-container {
   margin-top: 2px;
 }

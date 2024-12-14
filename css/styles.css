@@ -128,8 +128,8 @@ img {
   justify-content: space-evenly;
 }
 
-.github-container a:hover,
-.live-container a:hover {
+.github-container svg:hover,
+.live-container svg:hover {
   color: var(--color-primary);
 }
 

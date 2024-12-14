@@ -9,7 +9,7 @@
 /* NAVBAR and FOOTER */
 
 body {
-  background: var(--color-black);
+  background-color: var(--color-black);
   color: var(--color-white);
 }
 
